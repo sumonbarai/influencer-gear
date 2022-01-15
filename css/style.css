@@ -15,6 +15,7 @@ Version         : v 1.10
     4. banner area
     5. product area
     6. join area
+    7. footer area
 
 -----------------------------------------------------*/
 /* font import */
@@ -26,39 +27,44 @@ Version         : v 1.10
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     background-color: #fff;
 }
 
-p{
+p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 2.4rem; 
+    line-height: 2.4rem;
 }
+
 a,
-a:hover{
+a:hover {
     text-decoration: none;
 }
+
 /* input:focus,
 textarea:focus{
     outline: 0;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 } */
-ul{
+ul {
     list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -66,7 +72,7 @@ h4,
 h5,
 h6 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 .container {
@@ -79,6 +85,7 @@ h6 {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
 .btn {
     display: inline-block;
     background-color: #E02C6D;
@@ -86,30 +93,40 @@ h6 {
     color: #fff;
     padding: 1rem 2rem;
     text-transform: capitalize;
+    transition: background-color .5s ease;
 }
-.btn a{
+.btn:hover{
+    background-color: #22213C;
+}
+
+.btn a {
     color: #fff;
 }
+
 /*---- header area
 ============================================= */
-.header-area .main-menu{
+.header-area .main-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.main-menu .log-area p{
+
+.main-menu .log-area p {
     font-weight: 700;
     font-size: 2.4rem;
     color: #3A3A3A;
     text-transform: capitalize;
 }
-.main-menu .menu-area ul{
+
+.main-menu .menu-area ul {
     display: flex;
     align-items: center;
 }
-.main-menu .menu-area ul li{
+
+.main-menu .menu-area ul li {
     padding: 1.7rem;
 }
+
 .main-menu .menu-area ul li a {
     display: inline-block;
     text-transform: capitalize;
@@ -120,6 +137,7 @@ h6 {
     border-bottom: .2rem solid transparent;
     transition: border-bottom .8s ease;
 }
+
 .main-menu .menu-area ul li a:hover {
     border-bottom: .2rem solid #E02C6D;
 }
@@ -130,33 +148,39 @@ h6 {
 
 /*---- banner area
 ============================================= */
-.banner-area-content{
+.banner-area-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
+
 .banner-area-content .left-area,
 .banner-area-content .right-area {
     padding: 20px;
 }
-.banner-area-content .left-area h1{
+
+.banner-area-content .left-area h1 {
     font-size: 5.2rem;
     line-height: 7rem;
     color: #3A3A3A;
 }
-.banner-area-content .left-area p{
-   color: #3A3A3A;
-   margin: 1rem 0;
-   padding-bottom: 1rem;
-   max-width: 54rem;
+
+.banner-area-content .left-area p {
+    color: #3A3A3A;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    max-width: 54rem;
 }
-.banner-area-content .left-area .btn .arrow{
-   padding-left: .5rem;
+
+.banner-area-content .left-area .btn .arrow {
+    padding-left: .5rem;
 }
+
 .banner-area-content .left-area .btn {
-   margin-top: .5rem;
+    margin-top: .5rem;
 }
+
 .banner-area-content .right-area img {
     width: 44rem;
 }
@@ -167,6 +191,7 @@ h6 {
     width: 8rem;
     height: auto;
 }
+
 .sponcer-area .all-parner {
     display: flex;
     justify-content: space-between;
@@ -174,9 +199,11 @@ h6 {
     padding: 3.6rem 3rem;
     box-shadow: rgb(0 0 0 / 4%) 0px -1px 30px 2px;
 }
-.sponcer-area .company-name img{
+
+.sponcer-area .company-name img {
     width: 100%;
 }
+
 /*---- product area
 ============================================= */
 
@@ -188,59 +215,70 @@ h6 {
     text-align: center;
     padding: 3rem 0;
 }
+
 .all-product {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
 }
+
 .all-product .single-product {
     padding: 1.7rem 1.5rem;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     cursor: pointer;
 }
+
 .all-product .single-product .thumbnails {
     height: 25.6rem;
     border-radius: .5rem;
 }
+
 .all-product .single-product .thumbnails img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: .5rem;
 }
-.all-product .single-product .product-title{
+
+.all-product .single-product .product-title {
     font-weight: 500;
     font-size: 2.8rem;
     color: #18191F;
     text-transform: capitalize;
     padding-top: 1.6rem;
 }
-.all-product .single-product .product-price{
+
+.all-product .single-product .product-price {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 2.4rem;
     color: #000000de;
 }
+
 .all-product .single-product .product-ratting {
     margin-top: .8rem;
 }
-.all-product .single-product .product-ratting .filled{
+
+.all-product .single-product .product-ratting .filled {
     font-size: 1.2rem;
     color: #F78200;
 }
-.all-product .single-product .product-ratting .empty{
+
+.all-product .single-product .product-ratting .empty {
     font-size: 1.2rem;
     color: #000000de;
 }
-.all-product .single-product .product-ratting span{
+
+.all-product .single-product .product-ratting span {
     font-size: 1.6rem;
     color: #000000de;
     padding-left: .5rem;
     font-weight: 400;
 }
-.all-product .single-product .delivery-condition ,
-.all-product .single-product .product-stock ,
+
+.all-product .single-product .delivery-condition,
+.all-product .single-product .product-stock,
 .all-product .single-product .comments {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -248,6 +286,7 @@ h6 {
     color: #787885;
     line-height: 143%;
 }
+
 .see-more-btn {
     text-transform: capitalize;
     color: #E02C6D;
@@ -255,7 +294,8 @@ h6 {
     margin-top: 2rem;
     font-weight: 700;
 }
-.see-more-btn a{
+
+.see-more-btn a {
     color: #E02C6D;
     padding-right: 1rem;
     padding-top: 2rem;
@@ -264,7 +304,7 @@ h6 {
 
 /*---- join area
 ============================================= */
-.join-area .all-items{
+.join-area .all-items {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -272,34 +312,76 @@ h6 {
     padding-bottom: 8rem;
     padding-top: 8rem;
 }
-.join-area .all-items .left-area{
+
+.join-area .all-items .left-area {
     flex-grow: 1;
     padding-right: 4.8rem;
 }
 
-.join-area .all-items .left-area img{
+.join-area .all-items .left-area img {
     width: 40rem;
     border-radius: .7rem;
 }
-.join-area .all-items .right-area{
+
+.join-area .all-items .right-area {
     flex-grow: 2;
     padding-left: 4.8rem;
 }
-.join-area .all-items .right-area h2{
+
+.join-area .all-items .right-area h2 {
     font-size: 3.8rem;
     line-height: 6rem;
     color: #0A0826;
 }
-.join-area .all-items .right-area p{
+
+.join-area .all-items .right-area p {
     color: #6C6C6C;
-   margin: 1rem 0;
-   line-height: 2.8rem;
-   padding-bottom: 1rem;
-   max-width: 50rem;
+    margin: 1rem 0;
+    line-height: 2.8rem;
+    padding-bottom: 1rem;
+    max-width: 50rem;
 }
+
 .join-area .all-items .right-area .btn {
-   border-radius: 0px;
+    border-radius: 0px;
 }
 
+/*---- footer area
+============================================= */
+.footer-area {
+    padding: 5rem 0;
+    background-color: #0A0826;
+    text-align: center;
+    color: #fff;
+}
 
+.footer-area .footer-logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
 
+.footer-area .copyright-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #D9DBE1;
+}
+
+.footer-area .social-icons a {
+    font-size: 1.4rem;
+    display: inline-block;
+    color: #fff;
+    width: 3.2rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #22213C;
+    margin: .8rem 0;
+    transition: background-color .5s ease;
+}
+
+.footer-area .social-icons a:hover {
+    background-color: #E02C6D;
+}
