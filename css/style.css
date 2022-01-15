@@ -14,8 +14,9 @@ Version         : v 1.10
     3. banner area
     4. banner area
     5. product area
-    6. join area
-    7. footer area
+    6. photography area
+    7. join area
+    8. footer area
 
 -----------------------------------------------------*/
 /* font import */
@@ -301,7 +302,25 @@ h6 {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
+/*---- photography area
+============================================= */
+.photography-area {
+    width: 100%;
+    height: 24rem;
+    background:linear-gradient(rgba(34, 33, 60, 0.7), rgba(34, 33, 60, 0.7)), url(../images/product/cover-area.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.photography-area .text{
+    color: #fff;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
 /*---- join area
 ============================================= */
 .join-area .all-items {
