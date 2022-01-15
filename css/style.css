@@ -14,6 +14,7 @@ Version         : v 1.10
     3. banner area
     4. banner area
     5. product area
+    6. join area
 
 -----------------------------------------------------*/
 /* font import */
@@ -246,6 +247,58 @@ h6 {
     font-size: 1.4rem;
     color: #787885;
     line-height: 143%;
+}
+.see-more-btn {
+    text-transform: capitalize;
+    color: #E02C6D;
+    text-align: right;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+.see-more-btn a{
+    color: #E02C6D;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*---- join area
+============================================= */
+.join-area .all-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+.join-area .all-items .left-area{
+    flex-grow: 1;
+    padding-right: 4.8rem;
+}
+
+.join-area .all-items .left-area img{
+    width: 40rem;
+    border-radius: .7rem;
+}
+.join-area .all-items .right-area{
+    flex-grow: 2;
+    padding-left: 4.8rem;
+}
+.join-area .all-items .right-area h2{
+    font-size: 3.8rem;
+    line-height: 6rem;
+    color: #0A0826;
+}
+.join-area .all-items .right-area p{
+    color: #6C6C6C;
+   margin: 1rem 0;
+   line-height: 2.8rem;
+   padding-bottom: 1rem;
+   max-width: 50rem;
+}
+.join-area .all-items .right-area .btn {
+   border-radius: 0px;
 }
 
 
