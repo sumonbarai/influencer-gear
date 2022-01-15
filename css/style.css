@@ -109,7 +109,8 @@ h6 {
     align-items: center;
 }
 
-.main-menu .log-area p {
+.main-menu .log-area a {
+    display: inline-block;
     font-weight: 700;
     font-size: 3.4rem;
     color: #3A3A3A;
